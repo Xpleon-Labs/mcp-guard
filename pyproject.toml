@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xpleon-mcp-guard"
+version = "0.1.0"
+description = "Deterministic pre-flight interception for MCP tool execution."
+authors = [{name = "Xpleon Labs"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mcp_guard*"]
